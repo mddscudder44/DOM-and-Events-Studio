@@ -23,6 +23,7 @@ window.addEventListener('load', function() {
         let confirmLand = confirm('The shuttle is landing. Landing gear engaged')
         if (confirmLand) {
             flightStatus.innerText = "The shuttle has landed"
+            shuttleBackground.style.backgroundColor = "green"
         }
     
     })
