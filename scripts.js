@@ -6,6 +6,7 @@ window.addEventListener('load', function() {
     let shuttleBackground = document.getElementById('shuttleBackground');
     let shuttleHeight = document.getElementById('spaceShuttleHeight')
     let landBtn = document.getElementById('landing');
+    let abortBtn = document.getElementById('missionAbort');
 
 
 
@@ -27,6 +28,10 @@ window.addEventListener('load', function() {
             shuttleHeight.innerHTML = 0;
         }
     
+    });
+
+    abortBtn.addEventListener('click', function() {
+        let confirmAbort = confirm('Confirm that you want to abort the mission');
     })
         
 })
