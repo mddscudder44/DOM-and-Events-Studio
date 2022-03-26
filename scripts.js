@@ -32,6 +32,9 @@ window.addEventListener('load', function() {
 
     abortBtn.addEventListener('click', function() {
         let confirmAbort = confirm('Confirm that you want to abort the mission');
+        if (confirmAbort) {
+            flightStatus.innerText = "Mission aborted";
+        }
     })
         
 })
