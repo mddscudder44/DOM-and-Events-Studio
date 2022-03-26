@@ -5,7 +5,7 @@ window.addEventListener('load', function() {
     let flightStatus = document.getElementById('flightStatus');
     let shuttleBackground = document.getElementById('shuttleBackground');
     let shuttleHeight = document.getElementById('spaceShuttleHeight')
-
+    let landBtn = document.getElementById('landing');
 
 
 
@@ -20,5 +20,9 @@ window.addEventListener('load', function() {
             console.log("its false")
         }
     });
+
+    landBtn.addEventListener('click', function() {
+        let confirmLand = confirm('The shuttle is landing. Landing gear engaged')
+    })
         
 })
