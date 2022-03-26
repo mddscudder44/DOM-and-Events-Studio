@@ -34,6 +34,7 @@ window.addEventListener('load', function() {
         let confirmAbort = confirm('Confirm that you want to abort the mission');
         if (confirmAbort) {
             flightStatus.innerText = "Mission aborted";
+            shuttleBackground.style.backgroundColor = "green";
         }
     })
         
