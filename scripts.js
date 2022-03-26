@@ -16,13 +16,15 @@ window.addEventListener('load', function() {
             flightStatus.innerText = "Shuttle in flight"
             shuttleBackground.style.backgroundColor = "blue"
             shuttleHeight.innerHTML = 10000
-        } else {
-            console.log("its false")
-        }
+        } 
     });
 
     landBtn.addEventListener('click', function() {
         let confirmLand = confirm('The shuttle is landing. Landing gear engaged')
+        if (confirmLand) {
+            flightStatus.innerText = "The shuttle has landed"
+        }
+    
     })
         
 })
