@@ -24,6 +24,7 @@ window.addEventListener('load', function() {
         if (confirmLand) {
             flightStatus.innerText = "The shuttle has landed"
             shuttleBackground.style.backgroundColor = "green"
+            shuttleHeight.innerHTML = 0;
         }
     
     })
